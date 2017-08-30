@@ -756,7 +756,7 @@ final class AkaneTalkCanvas extends Canvas
 
                 //データベース生成
                 //--------------------
-                rs=RecordStore.openRecordStore("akane",true);
+                rs=RecordStore.openRecordStore("akane_ezj",true);
                 if (rs.getNumRecords()==0) {
                     rs.addRecord(new byte[]{0,0,0},0,3);
                     rs.addRecord(new byte[]{0},0,1);
@@ -765,7 +765,7 @@ final class AkaneTalkCanvas extends Canvas
 
                 //データベース読み込み
                 //--------------------
-                rs=RecordStore.openRecordStore("akane",false);
+                rs=RecordStore.openRecordStore("akane_ezj",false);
                 data=rs.getRecord(1);
                 akaneType =data[0] & 0xFF;
                 friend    =data[1] & 0xFF;
@@ -840,7 +840,7 @@ final class AkaneTalkCanvas extends Canvas
                     data = new byte[113400];  //approximate size of a3.png
                     isr.read(data);
                     isr.close();
-                    rs=RecordStore.openRecordStore("akane",true);
+                    rs=RecordStore.openRecordStore("akane_ezj",true);
                     rs.setRecord(2,data,0,data.length);
                     rs.closeRecordStore();
                 }
@@ -850,7 +850,7 @@ final class AkaneTalkCanvas extends Canvas
                 //データベース→イメージ
                 //--------------------
                 if (akaneType!=0) {
-                    rs=RecordStore.openRecordStore("akane",false);
+                    rs=RecordStore.openRecordStore("akane_ezj",false);
                     data=rs.getRecord(2);
                     rs.closeRecordStore();
                     try {
@@ -875,7 +875,7 @@ final class AkaneTalkCanvas extends Canvas
 //ステータス書き込み
 //====================
             else if (type.equals(M_STATE)) {
-                rs=RecordStore.openRecordStore("akane",true);
+                rs=RecordStore.openRecordStore("akane_ezj",true);
                 data=new byte[]{(byte)akaneType,(byte)friend,(byte)friendN};
                 rs.setRecord(1,data,0,3);
                 rs.closeRecordStore();

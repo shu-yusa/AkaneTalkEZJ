@@ -1,4 +1,4 @@
 
-Ž¿–â‚µ‚Ä‚à‚¢‚¢H
-‚¨ŒZ‚¿‚á‚ñA	ƒpƒ\ƒRƒ“‚ÌOS‚Í‰½‚ð	Žg‚Á‚Ä‚é‚ÌH
-‚à‚¿‚ë‚ñWindows	120a	UNIX‚¾‚æ	120b	B-TRON‚¾	120c
+è³ªå•ã—ã¦ã‚‚ã„ã„ï¼Ÿ
+ãŠå…„ã¡ã‚ƒã‚“ã€	ãƒ‘ã‚½ã‚³ãƒ³ã®OSã¯ä½•ã‚’	ä½¿ã£ã¦ã‚‹ã®ï¼Ÿ
+ã‚‚ã¡ã‚ã‚“Windows	120a	UNIXã ã‚ˆ	120b	B-TRONã 	120c

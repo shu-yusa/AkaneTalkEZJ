@@ -1,0 +1,2 @@
+#!/bin/sh
+java -noverify -jar ./emulator/player.jar ./dist/AkaneTalkEZJ.jad -d tmpclasses

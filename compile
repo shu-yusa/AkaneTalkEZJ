@@ -1,0 +1,11 @@
+#!/bin/sh
+APP=AkaneTalkEZJ
+# compile src
+javac -classpath ./midplib/cldcapi11.jar:./midplib/midpapi21.jar -d build/preverifysrc src/*.java
+# preverify
+./midplib/preverify -nofinalize -nonative -classpath ./midplib/cldcapi11.jar:./midplib/midpapi21.jar -d ./build/preverified ./build/preverifysrc
+
+# archive
+jar cfm dist/${APP}.jar ./build/manifest.mf -C build/preverified . 
+filesize=`wc -c dist/${APP}.jar | sed "s/^ *//g" | cut -d ' ' -f1`
+sed -i '' -e "s/MIDlet-Jar-Size:.*/MIDlet-Jar-Size:\ ${filesize}/g" dist/${APP}.jad

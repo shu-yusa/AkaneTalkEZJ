@@ -1,7 +1,12 @@
-MIDlet-Jar-Size: 2093888
+MIDlet-1: AkaneTalk, 7.png, AkaneTalk
+MIDlet-Icon: 7.png
+MIDlet-Name: あかねと〜く
+MIDlet-Jar-Size: 2100225
 MIDlet-Jar-URL: AkaneTalkEZJ.jar
 MIDlet-Name: AkaneTalkEZJ
 MIDlet-Vendor: Vendor
 MIDlet-Version: 1.0
+MPP-Height: 696
+MPP-Width: 480
 MicroEdition-Configuration: CLDC-1.1
 MicroEdition-Profile: MIDP-2.0
